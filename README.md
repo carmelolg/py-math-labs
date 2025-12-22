@@ -1,9 +1,10 @@
 # PY MATH LABS
 
+![logo](static/logo.svg)
+
 A repository containing mathematical examples and algorithms in Python, 
 focused on small educational implementations (e.g., Brun’s constant).
 
-![logo](static/logo.svg)
 
 ***
 
