@@ -1,0 +1,13 @@
+<svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="60" rx="12" fill="#1a1a1f"/>
+
+  <!-- π symbol - same color & symmetric distance -->
+  <text x="25" y="36" font-size="26" fill="#5a67d8" font-family="serif" font-weight="700" dominant-baseline="auto">π</text>
+
+  <!-- PYMATH LABS - perfect alignment -->
+  <text x="155" y="39" text-anchor="middle" font-family="'Futura','Helvetica Neue',Arial,sans-serif"
+        font-size="26" font-weight="900" fill="#4a90e2" letter-spacing="1.2" dominant-baseline="auto">PY MATH LABS</text>
+
+  <!-- ∞ symbol - perfect symmetry -->
+  <text x="268" y="38" font-size="26" fill="#5a67d8" font-family="serif" font-weight="700" dominant-baseline="auto">∞</text>
+</svg>
