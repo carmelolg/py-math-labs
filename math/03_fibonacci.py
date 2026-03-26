@@ -15,7 +15,6 @@ from the spiral of a nautilus shell to the arrangement of sunflower seeds!
 """
 
 import argparse
-import math as _math
 
 GOLDEN_RATIO = 1.6180339887
 
@@ -34,8 +33,6 @@ def fibonacci_sequence(n: int) -> list[int]:
 
 def golden_ratio_approx(sequence: list[int]) -> float:
     """Approximate the Golden Ratio using the last two Fibonacci numbers."""
-    if len(sequence) < 2 or sequence[-2] == 0:
-        return float("nan")
     return sequence[-1] / sequence[-2]
 
 
@@ -78,8 +75,8 @@ def main():
     print(f"\n🔢  First {args.n} Fibonacci numbers:")
     print("  " + ", ".join(str(v) for v in sequence))
 
-    phi = golden_ratio_approx(sequence)
-    if not _math.isnan(phi):
+    if len(sequence) >= 2 and sequence[-2] != 0:
+        phi = golden_ratio_approx(sequence)
         print(f"\n✨  Golden Ratio approximation (F({args.n}) / F({args.n - 1})): {phi:.10f}")
         print(f"    True Golden Ratio φ ≈ {GOLDEN_RATIO}…")
         print(f"    Difference          : {abs(phi - GOLDEN_RATIO):.10f}")
